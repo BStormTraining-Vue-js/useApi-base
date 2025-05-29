@@ -25,6 +25,6 @@ export function useApi<T>(apiRequest: useApi.ApiRequest<T>): [useApi.ApiCallBack
 
     return [
         callback,
-        {data, error, isLoading}
+        [data, error, isLoading]
     ];
 }
